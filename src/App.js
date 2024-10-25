@@ -12,11 +12,17 @@ function Item(props) {
   )
 }
 
+function Title() {
+  return (
+    <h1>Todo List App</h1>
+  )
+}
+
 function App() {
 
   return (
     <>
-      <h1>Todo List App</h1>
+      <Title />
       <h2>My tasks for today</h2>
       <button>Dark mode</button>
       <ul>
