@@ -2,6 +2,16 @@ import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
 
+function Item(props) {
+  return (
+    <div style={{backgroundColor: 'lightpink', width: '500px', height: '100px'}}>
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
+      <p>{props.deadline}</p>
+    </div>
+  )
+}
+
 function App() {
 
   return (
@@ -10,21 +20,9 @@ function App() {
       <h2>My tasks for today</h2>
       <button>Dark mode</button>
       <ul>
-        <div style={{backgroundColor: 'lightgrey', width: '500px', height: '100px'}}>
-          <h3>Task 1</h3>
-          <p>Task 1 description</p>
-          <p>task 1 deadline</p>
-        </div>
-        <div style={{backgroundColor: 'lightgrey', width: '500px', height: '100px'}}>
-          <h3>Task 2</h3>
-          <p>Task 2 description</p>
-          <p>task 2 deadline</p>
-        </div>
-        <div style={{backgroundColor: 'lightgrey', width: '500px', height: '100px'}}>
-          <h3>Task 3</h3>
-          <p>Task 3 description</p>
-          <p>task 3 deadline</p>
-        </div>
+        <Item title="laundry" description="wash clothes" deadline="tomorrow" />
+        <Item title="dishes" description="pots and pans" deadline="oct 30" />
+        <Item title="taxes" description="dont get audited" deadline="nov 1" />
       </ul>
     </>
   );
