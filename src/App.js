@@ -1,24 +1,31 @@
 import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Todo List App</h1>
+      <h2>My tasks for today</h2>
+      <ul>
+        <div>
+          <h3>Task 1</h3>
+          <p>Task 1 description</p>
+          <p>task 1 deadline</p>
+        </div>
+        <div>
+          <h3>Task 2</h3>
+          <p>Task 2 description</p>
+          <p>task 2 deadline</p>
+        </div>
+        <div>
+          <h3>Task 3</h3>
+          <p>Task 3 description</p>
+          <p>task 3 deadline</p>
+        </div>
+      </ul>
+    </>
   );
 }
 
