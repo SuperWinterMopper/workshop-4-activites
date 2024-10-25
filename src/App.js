@@ -34,9 +34,10 @@ function App() {
   }, [mode]);
 
   const backgroundColor = mode === 'light' ? 'white' : 'darkgrey';
+  const textColor = mode === 'light' ? 'black' : 'white';
 
   return (
-    <div style={{ backgroundColor: backgroundColor }}>
+    <div style={{ backgroundColor: backgroundColor, color: textColor }}>
       <Title />
       <h2>My tasks for today</h2>
       <button onClick={switchMode}>Dark mode</button>
